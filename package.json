@@ -1,0 +1,20 @@
+{
+  "name": "jims-classic-car-restoration",
+  "version": "1.0.0",
+  "description": "A website detailing the kind of restoration work Jim's Classic Cars is capable of doing.",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwind build src/tailwind.css -o dist/style.css"
+  },
+  "keywords": [
+    "cars"
+  ],
+  "author": "James Heilinger",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/damion": "^4.1.0",
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}

@@ -1,0 +1,22 @@
+.sharp-shadow {
+  box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+}
+
+#slide-from-left {
+  position: absolute;
+  transform: translateX(-100%);
+}
+
+#slide-from-right {
+  position:absolute;
+}
+
+.trigger {
+  animation: slide-ltr 0.5s forwards;
+}
+
+@keyframes slide-ltr {
+  100% {transform: translateX(0%); }
+}
