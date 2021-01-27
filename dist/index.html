@@ -12,9 +12,9 @@
 </head>
 <body>
   <!-- ========== NAVBAR ============ -->
-  <nav class="py-2 px-4 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 grid grid-cols-3 border-t-8 border-mc-harvest-800">
-    <i class="fas fa-bars text-2xl text-mc-black" onclick="openNav()"></i>
-    <h1 class="place-self-center"><img src="img/logo.svg" alt="Classic Auto Repair logo"></h1>
+  <nav class="py-2 px-4 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 grid grid-cols-3 md:grid-cols-2 border-t-8 border-mc-harvest-800">
+    <i class="fas fa-bars text-2xl text-mc-black md:hidden" onclick="openNav()"></i>
+    <h1 class="place-self-center md:justify-self-start md:ml-4"><img src="img/logo.svg" alt="Classic Auto Repair logo" class="w-24"></h1>
   </nav>
 
   <!-- ========== SIDENAV =========== -->
@@ -36,23 +36,33 @@
     </div>
 
     <!-- ========== SERVICES ========== -->
-    <div id="services" class="container mx-auto p-0 m-5 border-4 border-mc-harvest-800 rounded sharp-shadow">
-      <div class="p-3 bg-mc-blue-600">
-        <div class="p-5 bg-mc-harvest-50 border-2 border-mc-harvest-600 rounded">
-          <h2 class="text-3xl text-center mb-4 font-body">Sweet Lou's Services</h2>
-          <ul class="font-body">
-            <li>Dent removal</li>
-            <li>Paint chip repair</li>
-            <li>Carburetor tuning</li>
-            <li>Glass restoration</li>
-            <li>Tune-ups</li>
-            <li>Oil changes</li>
-            <li>Mechanical work</li>
-            <li>Engine restoration</li>
-            <li>Engine replacement</li>
-            <li>Part manufacturing</li>
-            <li>And much, much more!</li>
-          </ul>
+    <div id="services" class="container mx-auto px-2">
+      <div class="p-0 my-5 mx-auto border-4 border-mc-harvest-800 rounded sharp-shadow w-max">
+        <div class="p-3 bg-mc-blue-600">
+          <div class="p-5 bg-mc-harvest-50 border-2 border-mc-harvest-600 rounded">
+            <h2 class="text-2xl sm:text-3xl text-center mb-4 font-body">Sweet Lou's Services</h2>
+            <div class="grid grid-cols-1 justify-items-center font-body">
+              <div class="grid sm:grid-cols-2 sm:gap-x-3">
+                <div>
+                  <p class="py-1">Dent removal</p>
+                  <p class="py-1">Paint chip repair</p>
+                  <p class="py-1">Carburetor tuning</p>
+                  <p class="py-1">Glass restoration</p>
+                  <p class="py-1">Tune-ups</p>
+                </div>
+                <div>
+                  <p class="py-1">Oil changes</p>
+                  <p class="py-1">Mechanical work</p>
+                  <p class="py-1">Engine restoration</p>
+                  <p class="py-1">Engine replacement</p>
+                  <p class="py-1">Part manufacturing</p>
+                </div>
+                <div class="sm:col-span-2 sm:justify-self-center">
+                  <p class="font-bold pt-4">And much, much more!</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -61,7 +71,7 @@
     <div id="about" class="text-mc-black pt-5">
       <h2 class="my-3 text-2xl text-center font-body bg-mc-harvest-50 mr-10 px-5 py-2 border-mc-harvest-800 border-r-4 border-b-4 trigger">About Sweet Lou</h2>
       <p class="text-justify font-body bg-mc-harvest-50 ml-10 mb-3 px-5 py-2 border-mc-harvest-800 border-l-4 border-b-4">I specialize in the repair of classic cars and I have a passion for making sure these old gems continue to run and look good for years to come. Whether it be a 1930's era roadster, a '57 Chevy Bel Air, or a muscle car of the 60's, I can fix it up, restore it and keep it in tip-top shape. I have the experience, tools and expertise to tune carbureted engines and the manufacturing capabilities to create parts that are no longer available. I also have a 30 day satisfaction guarantee. If you're not satisfied, I'll make it right!</p>
-      <p class="mb-3 font-body bg-mc-harvest-50 mr-10 px-5 py-2  border-mc-harvest-800 border-r-4 border-b-4">Fill out the contact form if you have any questions!</p>
+      <p class="text-center mb-3 font-body bg-mc-harvest-50 mr-10 px-5 py-2  border-mc-harvest-800 border-r-4 border-b-4">Fill out the contact form if you have any questions!</p>
       <p class="font-body bg-mc-harvest-50 ml-10 px-5 pt-2 pb-2  border-mc-harvest-800 border-l-4">Sincerely,</p>
       <p class="text-center text-5xl font-script bg-mc-harvest-50 ml-10 mb-3 pb-4  border-mc-harvest-800 border-l-4 border-b-4">Sweet Lou</p>
     </div>
@@ -87,21 +97,6 @@
         <div data-netlify-recaptcha="true"></div>
   
         <input type="submit" value="Send" id="submit-btn" class="mt-4 p-2 w-full bg-mc-harvest-200 text-mc-harvest-900 sharp-shadow">
-        <!-- <div class="mt-4"><label for="name">Name</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-white rounded border-2 border-mc-harvest-800 shadow-md" name="name" placeholder="First and/or last name..." required>
-  
-        <div class="mt-2"><label for="subject">Subject</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-white rounded border-2 border-mc-harvest-800 shadow-md" name="subject" placeholder="What's this about?" required>
-  
-        <div class="mt-2"><label for="email">Email</label></div>
-        <input type="email" class="px-2 py-1 w-full bg-mc-white rounded border-2 border-mc-harvest-800 shadow-md" name='email' placeholder="you@yourhost.com" required>
-  
-        <div class="mt-2"><label for="message">Message</label></div>
-        <textarea name="message" class="px-2 py-1 w-full bg-mc-white rounded border-2 border-mc-harvest-800 shadow-md" placeholder="How can I help you?" required></textarea>
-  
-        <div data-netlify-recaptcha="true"></div>
-  
-        <input type="submit" value="Send" id="submit-btn" class="mt-4 p-2 w-full bg-mc-harvest-200 text-mc-harvest-800 rounded border-2 border-mc-harvest-800 shadow-md"> -->
       </form>
     </div>
 
