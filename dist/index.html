@@ -12,9 +12,16 @@
 </head>
 <body>
   <!-- ========== NAVBAR ============ -->
-  <nav class="py-2 px-4 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 grid grid-cols-3 md:grid-cols-2 border-t-8 border-mc-harvest-800">
-    <i class="fas fa-bars text-2xl text-mc-black md:hidden" onclick="openNav()"></i>
-    <h1 class="place-self-center md:justify-self-start md:ml-4"><img src="img/logo.svg" alt="Classic Auto Repair logo" class="w-24"></h1>
+  <nav class="py-2 px-4 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 border-t-8 border-mc-harvest-800">
+    <div class="container grid grid-cols-3 mx-auto w-11/12 sm:w-10/12 lg:w-8/12">
+      <i class="fas fa-bars text-2xl text-mc-black md:hidden" onclick="openNav()"></i>
+      <h1 class="place-self-center md:justify-self-start md:ml-4"><img src="img/logo.svg" alt="Classic Auto Repair logo" class="w-24"></h1>
+      <div class="text-mc-black font-body col-span-2 justify-self-end items-center mr-4 hidden md:flex">
+        <a href="#services" class="py-2 pr-2 pl-8 no-underline text-lg block">Services</a>
+        <a href="#about" class="py-2 pr-2 pl-8 no-underline text-lg block">About Sweet Lou</a>
+        <a href="#contact" class="py-2 pr-2 pl-8 no-underline text-lg block">Contact</a>
+      </div>
+    </div>
   </nav>
 
   <!-- ========== SIDENAV =========== -->
@@ -25,14 +32,14 @@
     <a href="#contact" onclick="closeNav()" class="py-2 pr-2 pl-8 no-underline text-lg block">Contact</a>
   </div>
 
-  <img src="img/chrome-band.svg" alt="chrome band spacer" class="shadow-md">
+  <img src="img/chrome-band.svg" alt="chrome band spacer" class="shadow-md h-5 w-full">
 
   <main id="content" class="text-mc-black bg-gradient-to-b from-mc-blue-100 to to-mc-blue-400">
     <!-- ========== SHOWCASE ============== -->
     <div class="px-5 pt-5 pb-5">
       <h1 class="text-center text-3xl mb-4 font-body">Sweet Lou's<br class="sm:hidden"> Auto Repair</h1>
-      <p class="mb-4 text-center font-script text-4xl">Specializing in the classics!</p>
-      <img src="img/pexels-tim-mossholder-3076820.jpg" alt="Chromed out car engine" class="w-full border-2 border-mc-harvest-50 shadow-md">
+      <p class="mb-4 text-center font-script text-4xl sm:text-5xl">Specializing in the classics!</p>
+      <img src="img/pexels-tim-mossholder-3076820.jpg" alt="Chromed out car engine" class="w-full border-2 border-mc-harvest-50 mx-auto shadow-md sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
     </div>
 
     <!-- ========== SERVICES ========== -->
@@ -68,12 +75,12 @@
     </div>
 
     <!-- ========== ABOUT ============= -->
-    <div id="about" class="text-mc-black pt-5">
-      <h2 class="my-3 text-2xl text-center font-body bg-mc-harvest-50 mr-10 px-5 py-2 border-mc-harvest-800 border-r-4 border-b-4 trigger">About Sweet Lou</h2>
-      <p class="text-justify font-body bg-mc-harvest-50 ml-10 mb-3 px-5 py-2 border-mc-harvest-800 border-l-4 border-b-4">I specialize in the repair of classic cars and I have a passion for making sure these old gems continue to run and look good for years to come. Whether it be a 1930's era roadster, a '57 Chevy Bel Air, or a muscle car of the 60's, I can fix it up, restore it and keep it in tip-top shape. I have the experience, tools and expertise to tune carbureted engines and the manufacturing capabilities to create parts that are no longer available. I also have a 30 day satisfaction guarantee. If you're not satisfied, I'll make it right!</p>
-      <p class="text-center mb-3 font-body bg-mc-harvest-50 mr-10 px-5 py-2  border-mc-harvest-800 border-r-4 border-b-4">Fill out the contact form if you have any questions!</p>
+    <div id="about" class="text-mc-black pt-5 container sm:m-auto sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+      <h2 class="my-3 text-2xl text-center font-body bg-mc-harvest-50 mr-10 px-5 py-2 border-mc-harvest-800 border-r-4 trigger">About Sweet Lou</h2>
+      <p class="text-justify font-body bg-mc-harvest-50 ml-10 mb-3 px-5 py-2 border-mc-harvest-800 border-l-4">I specialize in the repair of classic cars and I have a passion for making sure these old gems continue to run and look good for years to come. Whether it be a 1930's era roadster, a '57 Chevy Bel Air, or a muscle car of the 60's, I can fix it up, restore it and keep it in tip-top shape. I have the experience, tools and expertise to tune carbureted engines and the manufacturing capabilities to create parts that are no longer available. I also have a 30 day satisfaction guarantee. If you're not satisfied, I'll make it right!</p>
+      <p class="text-center mb-3 font-body bg-mc-harvest-50 mr-10 px-5 py-2  border-mc-harvest-800 border-r-4">Fill out the contact form if you have any questions!</p>
       <p class="font-body bg-mc-harvest-50 ml-10 px-5 pt-2 pb-2  border-mc-harvest-800 border-l-4">Sincerely,</p>
-      <p class="text-center text-5xl font-script bg-mc-harvest-50 ml-10 mb-3 pb-4  border-mc-harvest-800 border-l-4 border-b-4">Sweet Lou</p>
+      <p class="text-center text-5xl font-script bg-mc-harvest-50 ml-10 mb-3 pb-4  border-mc-harvest-800 border-l-4">Sweet Lou</p>
     </div>
     
     <!-- ========== CONTACT =========== -->
@@ -82,17 +89,20 @@
       <form class="font-body" method="POST" name="contact-form" id="contact-form" action="/thank-you.html" netlify-honeypot="pulse-check" data-netlify="true" data-netlify-recaptcha="true">
         <label class="hidden">Let's check if you have a pulse: <input name="pulse-check" /></label>
   
-        <div class="mt-4"><label for="name">Name</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-white sharp-shadow" name="name" placeholder="First and/or last name..." required>
+        <div class="mt-4"><label for="name">First Name</label></div>
+        <input type="text" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name="name" placeholder="First name..." required>
+  
+        <div class="mt-2"><label for="name">Last Name</label></div>
+        <input type="text" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name="name" placeholder="Last name..." required>
   
         <div class="mt-2"><label for="subject">Subject</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-white sharp-shadow" name="subject" placeholder="What's this about?" required>
+        <input type="text" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name="subject" placeholder="What's this about?" required>
   
         <div class="mt-2"><label for="email">Email</label></div>
-        <input type="email" class="px-2 py-1 w-full bg-mc-white sharp-shadow" name='email' placeholder="you@yourhost.com" required>
+        <input type="email" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name='email' placeholder="you@yourhost.com" required>
   
         <div class="mt-2"><label for="message">Message</label></div>
-        <textarea name="message" class="px-2 py-1 w-full bg-mc-white sharp-shadow" placeholder="How can I help you?" required></textarea>
+        <textarea name="message" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" placeholder="How can I help you?" required></textarea>
   
         <div data-netlify-recaptcha="true"></div>
   
@@ -100,7 +110,7 @@
       </form>
     </div>
 
-    <img src="img/chrome-band.svg" alt="chrome band spacer">
+    <img src="img/chrome-band.svg" alt="chrome band spacer" class="shadow-md h-5 w-full">
     
     <!-- ========== FOOTER ============ -->
     <div class="p-5 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100"></div>

@@ -76,34 +76,3 @@ module.exports = {
   variants: {},
   plugins: [],
 }
-
-// Color Palette
-// =============
-// 
-// TEAL
-// ====
-// teal-: #CEE9E8
-// teal-: #B4E0E1
-// teal-: #66C8C9
-// teal-: #5CCACE
-// teal-: #3ABEC0
-// teal-: #01B8B6
-// teal-: #02ACA9
-
-// PINK
-// ====
-// pink-: #F1679B
-// pink-: #F2689C
-// pink-: #F596B6
-// pink-: #EF689B
-// pink-: #F386AF
-// pink-: 
-// pink-: 
-
-// BLACK
-// =====
-// black-: #231F20
-
-// WHITE
-// =====
-// white-: #FCFAFB
