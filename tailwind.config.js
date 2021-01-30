@@ -4,10 +4,10 @@ module.exports = {
   purge: [],
   darkMode: false,
   theme: {
-    boxShadow: {
-      'sharp': 'box-shadow: 5px 5px 0px 0px rgba(35,31,32,1)'
-    },
     extend: {
+      boxShadow: {
+        'sharp': 'box-shadow: 5px 5px 0px 0px rgba(35,31,32,1)'
+      },
       colors: {
         'mc-blue': {
           '50': '#def4f5',
@@ -73,6 +73,12 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      fontWeight: ['active'],
+      transform: ['active'],
+      translate: ['active']
+    }
+  },
   plugins: [],
 }

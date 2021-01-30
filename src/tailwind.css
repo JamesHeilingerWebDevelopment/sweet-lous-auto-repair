@@ -1,5 +1,25 @@
 /** @format */
 
+* {
+  scroll-behavior: smooth;
+}
+
+.sharp-shadow {
+  box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+}
+
+.sharp-shadow:active {
+  box-shadow: 5px 3px 0px 0px rgba(35,31,32,1);
+  -webkit-box-shadow: 5px 3px 0px 0px rgba(35,31,32,1);
+  -moz-box-shadow: 5px 3px 0px 0px rgba(35,31,32,1);
+}
+
+.contact-form-style {
+  @apply px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700  max-w-md sharp-shadow;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -5,17 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/54b1a1f787.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="extras.css">
   <link rel="stylesheet" href="fonts/fontsheet.css">
-  <link rel="shortcut icon" type="image/svg" href="favicon.ico">
-  <title>Classic Auto Repair</title>
+  
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#fcfafb">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Sweet Lou's Auto Repair</title>
 </head>
-<body>
+<body class="scroll">
   <!-- ========== NAVBAR ============ -->
   <nav class="py-2 px-4 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 border-t-8 border-mc-harvest-800">
     <div class="container grid grid-cols-3 mx-auto w-11/12 sm:w-10/12 lg:w-8/12">
       <i class="fas fa-bars text-2xl text-mc-black md:hidden" onclick="openNav()"></i>
-      <h1 class="place-self-center md:justify-self-start md:ml-4"><img src="img/logo.svg" alt="Classic Auto Repair logo" class="w-24"></h1>
+      <h1 class="place-self-center md:justify-self-start md:ml-4"><img src="img/logo-v2.svg" alt="Classic Auto Repair logo" class="w-24"></h1>
       <div class="text-mc-black font-body col-span-2 justify-self-end items-center mr-4 hidden md:flex">
         <a href="#services" class="py-2 pr-2 pl-8 no-underline text-lg block">Services</a>
         <a href="#about" class="py-2 pr-2 pl-8 no-underline text-lg block">About Sweet Lou</a>
@@ -36,10 +44,12 @@
 
   <main id="content" class="text-mc-black bg-gradient-to-b from-mc-blue-100 to to-mc-blue-400">
     <!-- ========== SHOWCASE ============== -->
-    <div class="px-5 pt-5 pb-5">
+    <div class="p-5">
       <h1 class="text-center text-3xl mb-4 font-body">Sweet Lou's<br class="sm:hidden"> Auto Repair</h1>
       <p class="mb-4 text-center font-script text-4xl sm:text-5xl">Specializing in the classics!</p>
-      <img src="img/pexels-tim-mossholder-3076820.jpg" alt="Chromed out car engine" class="w-full border-2 border-mc-harvest-50 mx-auto shadow-md sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
+      <div>
+        <img src="img/thunderbird-tail-light.jpg" alt="Thunderbird tail light" class="w-full border-8 border-mc-harvest-50 mx-auto sharp-shadow max-w-md ">
+      </div>
     </div>
 
     <!-- ========== SERVICES ========== -->
@@ -76,7 +86,7 @@
 
     <!-- ========== ABOUT ============= -->
     <div id="about" class="text-mc-black pt-5 container sm:m-auto sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-4/12">
-      <h2 class="my-3 text-2xl text-center font-body bg-mc-harvest-50 mr-10 px-5 py-2 border-mc-harvest-800 border-r-4 trigger">About Sweet Lou</h2>
+      <h2 class="my-3 mr-10 px-5 py-2 text-2xl text-center font-body bg-mc-harvest-50 border-mc-harvest-800 border-r-4">About Sweet Lou</h2>
       <p class="text-justify font-body bg-mc-harvest-50 ml-10 mb-3 px-5 py-2 border-mc-harvest-800 border-l-4">I specialize in the repair of classic cars and I have a passion for making sure these old gems continue to run and look good for years to come. Whether it be a 1930's era roadster, a '57 Chevy Bel Air, or a muscle car of the 60's, I can fix it up, restore it and keep it in tip-top shape. I have the experience, tools and expertise to tune carbureted engines and the manufacturing capabilities to create parts that are no longer available. I also have a 30 day satisfaction guarantee. If you're not satisfied, I'll make it right!</p>
       <p class="text-center mb-3 font-body bg-mc-harvest-50 mr-10 px-5 py-2  border-mc-harvest-800 border-r-4">Fill out the contact form if you have any questions!</p>
       <p class="font-body bg-mc-harvest-50 ml-10 px-5 pt-2 pb-2  border-mc-harvest-800 border-l-4">Sincerely,</p>
@@ -86,34 +96,33 @@
     <!-- ========== CONTACT =========== -->
     <div id="contact" class="p-5">
       <h2 class="text-3xl text-center">Contact the Shop</h2>
-      <form class="font-body" method="POST" name="contact-form" id="contact-form" action="/thank-you.html" netlify-honeypot="pulse-check" data-netlify="true" data-netlify-recaptcha="true">
+      <form class="font-body mx-auto max-w-md grid grid-cols-1 justify-items-center" method="POST" name="contact-form" id="contact-form" action="/thank-you.html" netlify-honeypot="pulse-check" data-netlify="true" data-netlify-recaptcha="true">
         <label class="hidden">Let's check if you have a pulse: <input name="pulse-check" /></label>
   
-        <div class="mt-4"><label for="name">First Name</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name="name" placeholder="First name..." required>
+        <div class="mt-4 justify-self-start"><label for="name">Full Name</label></div>
+        <input type="text" class="contact-form-style" name="name" placeholder="First name..." required>
   
-        <div class="mt-2"><label for="name">Last Name</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name="name" placeholder="Last name..." required>
+        <div class="mt-2 justify-self-start"><label for="subject">Subject</label></div>
+        <input type="text" class="contact-form-style" name="subject" placeholder="What's this about?" required>
   
-        <div class="mt-2"><label for="subject">Subject</label></div>
-        <input type="text" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name="subject" placeholder="What's this about?" required>
+        <div class="mt-2 justify-self-start"><label for="email">Your Email</label></div>
+        <input type="email" class="contact-form-style" name='email' placeholder="you@yourhost.com" required>
   
-        <div class="mt-2"><label for="email">Email</label></div>
-        <input type="email" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" name='email' placeholder="you@yourhost.com" required>
-  
-        <div class="mt-2"><label for="message">Message</label></div>
-        <textarea name="message" class="px-2 py-1 w-full bg-mc-harvest-50 placeholder-mc-harvest-700 sharp-shadow" placeholder="How can I help you?" required></textarea>
+        <div class="mt-2 justify-self-start"><label for="message">Message</label></div>
+        <textarea name="message" class="contact-form-style" placeholder="How can I help you?" required></textarea>
   
         <div data-netlify-recaptcha="true"></div>
   
-        <input type="submit" value="Send" id="submit-btn" class="mt-4 p-2 w-full bg-mc-harvest-200 text-mc-harvest-900 sharp-shadow">
+        <input type="submit" value="Send" id="submit-btn" class="mt-4 p-2 text-2xl w-full max-w-md bg-mc-harvest-400 text-mc-harvest-900 sharp-shadow hover:bg-mc-harvest-200 active:transform active:translate-y-0.5 focus:ring-0 focus:underline focus:font-bold">
       </form>
     </div>
 
     <img src="img/chrome-band.svg" alt="chrome band spacer" class="shadow-md h-5 w-full">
     
     <!-- ========== FOOTER ============ -->
-    <div class="p-5 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100"></div>
+    <div class="p-5 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100">
+      <p class="text-center font-body">&copy 2021 - Sweet Lou's Auto Repair</p>
+    </div>
 
   </main>
 
