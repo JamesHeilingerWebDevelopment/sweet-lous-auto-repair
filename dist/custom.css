@@ -18,7 +18,10 @@
 }
 
 .g-recaptcha {
-  @apply mt-5 sharp-shadow;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(35,31,32,1);
 }
 
 @media only screen and (max-width: 640px) {
