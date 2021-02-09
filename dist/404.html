@@ -19,32 +19,31 @@
 
   <title>Sweet Lou's Auto Repair</title>
 </head>
-<body class="scroll flex flex-col min-h-screen justify-between bg-gradient-to-b from-mc-blue-50 to to-mc-blue-400 w-auto">
+<body class="flex flex-col justify-between w-auto min-h-screen scroll bg-gradient-to-b from-mc-blue-50 to to-mc-blue-400">
   <!-- ========== NAVBAR ============ -->
   <div>
-    <nav class="py-2 px-4 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 border-t-8 border-mc-harvest-800">
-      <div class="container grid grid-cols-3 items-center mx-auto w-11/12 sm:w-10/12 lg:w-8/12">
-        <!-- <a href="/" class="w-max"><img src="img/logo-v2.svg" alt="Sweet Lou's Auto Repair logo" class="w-24 place-self-center md:justify-self-start md:ml-4 col-start-2 md:col-start-auto"></a> -->
-        <i class="fas fa-bars my-2 text-2xl text-mc-harvest-900 justify-self-end md:hidden col-start-3" onclick="openNav()"></i>
-        <div class="text-mc-black font-body col-span-2 justify-self-end items-center mr-4 hidden md:flex">
-          <a href="/#services" class="py-2 md:px-7 font-body text-lg block hover:bg-mc-harvest-100">Services</a>
-          <a href="/#about" class="py-2 md:px-1 lg:px-5 font-body text-lg block hover:bg-mc-harvest-100">About Sweet Lou</a>
-          <a href="/#contact" class="py-2 md:px-7 font-body text-lg block hover:bg-mc-harvest-100">Contact</a>
+    <nav class="px-4 py-2 border-t-8 md:h-32 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 border-mc-harvest-800">
+      <div class="container grid items-center w-11/12 grid-cols-1 mx-auto sm:w-10/12 lg:w-9/12">
+        <i class="my-2 text-2xl fas fa-bars text-mc-harvest-900 justify-self-end md:hidden" onclick="openNav()"></i>
+        <div class="items-center hidden text-mc-black font-body justify-self-end md:flex md:justify-self-center">
+          <a href="/#services" class="navbar-link">Services</a>
+          <a href="/#about" class="navbar-link">About Sweet Lou</a>
+          <a href="/#contact" class="navbar-link">Contact</a>
         </div>
       </div>
     </nav>
   
     <!-- ========== SIDENAV =========== -->
-    <div id="side-nav" class="h-full w-0 fixed z-10 top-0 right-0 bg-gradient-to-br from-mc-black to-mc-harvest-900 overflow-x-hidden pt-4 text-mc-harvest-50">
-      <a href="javascript:void(0)" onclick="closeNav()" class="absolute top-0 right-5 text-2xl mt-2 ml-12"><i class="fas fa-times-circle"></i></a>
-      <a href="/#services" onclick="closeNav()" class="py-2 pr-2 pl-8 text-lg block">Services</a>
-      <a href="/#about" onclick="closeNav()" class="py-2 pr-2 pl-8 text-lg block">About&nbsp;Sweet&nbsp;Lou</a>
-      <a href="/#contact" onclick="closeNav()" class="py-2 pr-2 pl-8 text-lg block">Contact</a>
+    <div id="side-nav" class="fixed top-0 right-0 z-10 w-0 h-full pt-4 overflow-x-hidden transition-all duration-500 bg-gradient-to-br from-mc-black to-mc-harvest-900 opacity-95 text-mc-harvest-50">
+      <a href="javascript:void(0)" onclick="closeNav()" class="absolute top-0 mt-2 ml-12 text-2xl right-5"><i class="fas fa-times-circle"></i></a>
+      <a href="/#services" onclick="closeNav()" class="sidenav-link">Services</a>
+      <a href="/#about" onclick="closeNav()" class="sidenav-link">About&nbsp;Sweet&nbsp;Lou</a>
+      <a href="/#contact" onclick="closeNav()" class="sidenav-link">Contact</a>
     </div>
   
     <div class="relative">
-      <img src="img/chrome-band.svg" alt="chrome band spacer" class="shadow-md h-5 w-full">
-      <a href="/" class="w-max absolute -top-12 left-0 right-0 mx-auto"><img src="img/logo-v2.svg" alt="Sweet Lou's Auto Repair logo" class="h-44"></a>
+      <img src="img/chrome-band.svg" alt="chrome band spacer" class="w-full h-5 shadow-md">
+      <a href="/" class="absolute left-0 right-0 mx-auto w-max -top-12"><img src="img/logo-v2.svg" alt="Sweet Lou's Auto Repair logo" class="h-44"></a>
     </div>
   </div>
 
@@ -53,11 +52,11 @@
     <div class="container mx-auto">
       <div class="p-0 mx-auto border-4 border-mc-harvest-800 sharp-shadow w-max">
         <div class="p-3 bg-mc-blue-600">
-          <div class="font-body p-5 bg-mc-harvest-50 border-2 border-mc-harvest-600 flex flex-col">
-            <h2 class="text-2xl sm:text-3xl text-center mb-4">Oops!</h2>
+          <div class="flex flex-col p-5 border-2 font-body bg-mc-harvest-50 border-mc-harvest-800">
+            <h2 class="mb-4 text-2xl text-center sm:text-3xl">Oops!</h2>
             <p class="text-center">That's a 404 error.</p>
             <p class="text-center">(Nothing to see here.)</p>
-            <a href="/" class="mt-4 px-4 py-2 text-center text-lg sm:text-xl w-full max-w-md bg-mc-harvest-400 text-mc-harvest-900 hover:bg-mc-harvest-200 active:transform active:translate-y-0.5 focus:ring-0 focus:underline focus:font-bold">Back to Sweet Lou's</a>
+            <a href="/" class="mt-4 px-4 py-2 text-center text-lg sm:text-xl w-full max-w-md bg-mc-harvest-400 text-mc-harvest-900 hover:bg-mc-harvest-200 active:transform active:translate-y-0.5 focus:ring-0 focus:underline focus:font-bold shadow-sharp">Back to Sweet Lou's</a>
           </div>
         </div>
       </div>
@@ -65,12 +64,12 @@
   </main>
   
   <div>
-    <img src="img/chrome-band.svg" alt="chrome band spacer" class="shadow-md h-5 w-full z-10">
+    <img src="img/chrome-band.svg" alt="chrome band spacer" class="z-10 w-full h-5 shadow-md">
     
     <!-- ========== FOOTER ============ -->
-    <div class="p-5 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100 z-0">
+    <div class="z-0 p-5 bg-gradient-to-tl from-mc-harvest-300 to-mc-harvest-100">
       <p class="text-center font-body">&copy 2021 - <a href="/">Sweet Lou's Auto Repair</a></p>
-      <p class="text-center font-body text-xs mt-2">Site created by <a href="https://autoshopgrowth.com" class="underline">AutoShopGrowth.com</a></p>
+      <p class="mt-2 text-xs text-center font-body">Site created by <a href="https://autoshopgrowth.com" class="underline">AutoShopGrowth.com</a></p>
     </div>
   </div>
 

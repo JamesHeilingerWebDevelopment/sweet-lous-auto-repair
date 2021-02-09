@@ -1,13 +1,14 @@
 {
-  "name": "jims-classic-car-restoration",
+  "name": "sweet-lous-auto-repair",
   "version": "1.0.0",
-  "description": "A website detailing the kind of restoration work Jim's Classic Cars is capable of doing.",
+  "description": "A website advertising the services of Sweet Lou's Auto Repair.",
   "main": "index.html",
   "scripts": {
-    "build:css": "tailwind build src/tailwind.css -o dist/style.css"
+    "build:css": "tailwind build src/tailwind.css -o dist/style.css",
+    "prod": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/style.css"
   },
   "keywords": [
-    "cars"
+    "cars, car repair, auto repair"
   ],
   "author": "James Heilinger",
   "license": "ISC",
