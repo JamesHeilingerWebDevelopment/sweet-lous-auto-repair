@@ -20,6 +20,14 @@
   @apply block py-2 pl-8 pr-2 text-lg font-body;
 }
 
+#icon-th-menu {
+  fill: rgba(46, 24, 4, 1);
+}
+
+#icon-times-circle {
+  fill: #fae4d0;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
